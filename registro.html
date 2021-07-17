@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">HoodieShop</a></h1>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="empresa.html">Empresa</a>
+                    <ul>
+                        <li><a href="empresa.html">Sobre nosotros</a></li>
+                        <li><a href="">Clientes</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </ul>
+        </nav>
+        <nav id="iconos">
+            <ul>
+                <li class="active"><a href="registro.html"><i class="fas fa-user"></i></a></li>
+                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <main id="mainRegistro">
+            <form action="" novalidate>
+                <h1>Registro</h1>
+                <fieldset>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Introduce el nombre completo" required autofocus autocomplete="off"/>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Introduce la contraseña" required autocomplete="off" />
+                    <span class="noValido">La contraseña tiene que tener 8 caracteres y como mínimo<br> una letra minúscula y una mayúscula.</span>
+                    <label for="emailr">Email</label>
+                    <input type="email" id="emailr" placeholder="Introduce el email" required  autocomplete="off"/>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Introduce el teléfono" required autocomplete="off" />
+                </fieldset>
+                <fieldset>
+                    <label for="codps">Código postal</label>
+                    <input type="text" id="codps" placeholder="Introduce el código postal" required autocomplete="off" />
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" placeholder="Introduce la ciudad" required autocomplete="off" />
+                    <label for="pais">País</label>
+                    <input type="text" id="pais" placeholder="Introduce el pais" required autocomplete="off" />
+                </fieldset>
+                <input type="submit" value="Registro" >
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <section>
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="premium.html">Premium</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <section id="email">
+                <h3>Contacto</h3>
+                <a href="">info@HoodieShop.com</a>
+            </section>
+
+            <section id="redes">
+                <h3>Redes</h3>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </section>
+        </section>
+
+        <section>
+            <h3>Aviso Legal</h3>
+            <a href="">Términos y condiciones</a>
+        </section>
+
+        <section id="pie">
+            <p>&copy;HoodieShop.com</p>
+        </section>
+    </footer>
+</body>
+
+</html>
